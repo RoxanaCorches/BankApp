@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Bank Limited</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="list-container">
+        <div class="logo">
+            <img src="images/logo3.png" alt="Bank Logo">
+            <h1>Bank Limited</h1> 
+        </div>
+
+        <div class="list">
+            <ul>
+                <li class="menu-list">
+                        <img src="images/list1.png" alt="Menu List Icon">Menu List
+                </li>
+                <li class="options">
+                    <a href="#" onclick="showPanel('home')">
+                        <img src="images/home1.webp" alt="Home Icon">My Account
+                    </a>
+                </li>
+                <!-- 
+                <li class="options">
+                    <a href="#" onclick="showPanel('newAccount')">
+                        <img src="images/account.webp" alt="New Account">Create Account
+                    </a>
+                </li>
+                -->
+                <li class="options">
+                    <a href="#" onclick="showPanel('transferTo')">
+                        <img src="images/transfer.png" alt="Transfer to">Transfer to
+                    </a>
+                </li>
+
+                <li class="options">
+                    <a href="#" onclick="showPanel('deposit')">
+                        <img src="images/deposit1.png" alt="Deposit">Deposit
+                    </a>
+                </li>
+
+                <li class="options">
+                    <a href="#" onclick="showPanel('withdraw')">
+                        <img src="images/withdraw2.png" alt="Withdraw">Withdraw
+                    </a>
+                </li>
+                <li class="options">
+                    <a href="#" onclick="showPanel('transactionsnsHistory')">
+                        <img src="images/ist1.svg" alt="Transactions History">Transactions History
+                    </a>
+
+                </li>
+                <li class="options">
+                    <a href="#" onclick="showPanel('changePassword')">
+                        <img src="images/pass.webp" alt="Change Password Icon">Change Password
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="showPanel('logout')">
+                        <img src="images/logout.png" alt="Log Out Icon">Log out
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="right-panel" id="rightPanel">
+        <div id="content">
+           
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script> 
+</body>
+</html>

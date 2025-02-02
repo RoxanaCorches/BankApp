@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Bank Limited</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="list-container">
+        <div class="logo">
+            <img src="images/logo3.png" alt="Bank Logo">
+            <h1>Bank Limited</h1> 
+        </div>
+
+        <div class="list">
+            <ul>
+                <li class="menu-list">
+                        <img src="images/list1.png" alt="Menu List Icon">Menu List
+                </li>
+               
+
+                <li class="options">
+                    <a href="#" onclick="showPanel('newAccount')">
+                        <img src="images/account.webp" alt="New Account">Create Account
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="#" onclick="showPanel('logout')">
+                        <img src="images/logout.png" alt="Log Out Icon">Log out
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right-panel-signup" id="rightPanel">
+        <div id="content">
+            <div class="signup-container">
+                <h2>Open New Account</h2>
+                <div class="my_profile">
+                    <p>Open New Account</p>
+                </div>
+                <div class="view-profile">
+                    <h3>Personal Data</h3>
+                </div>
+                <form id="createAccountForm" onsubmit="createAccount(event)">
+                    <div class="container-createAccount">
+                        <div class="personal-data-left-right">
+                            <div class="personal-data-left">
+
+                                <div class="form-group1">
+                                    <label for="name">Name:</label>
+                                    <div class="input-icon">
+                                        <input type="text" class="personal-data" id="name" required>
+                                        <img class="new_account_img" src="images/name.png">
+                                    </div>
+                                </div>
+
+                                <div class="form-group1">
+                                    <label for="date">Date of Birth:</label>
+                                    <div class="input-icon">
+                                        <input type="text" class="personal-data" id="date" required>
+                                        <img class="new_account_img" src="images/calendar.png">
+                                    </div>
+                                </div>
+
+                                <div class="form-group1">
+                                    <label for="age">Age:</label>
+                                    <div class="input-icon">
+                                        <input type="text" class="personal-data" id="age" required>
+                                        <img class="new_account_img" src="images/age.png">
+                                    </div>
+                                </div>
+
+                                <div class="form-group1">
+                                    <label for="user">Username:</label>
+                                    <div class="input-icon">
+                                        <input type="text" class="personal-data" id="user" required>
+                                        <img class="new_account_img" src="images/login1.png">
+                                    </div>
+                                </div>
+
+                                <div class="form-group1">
+                                    <label for="pass">Password:</label>
+                                    <div class="input-icon">
+                                        <input type="password" class="personal-data" id="pass" required>
+                                        <img class="new_account_img" src="images/hidden.png">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="personal-data-right">
+                                <div class="form-group1">
+                                    <label for="contact">Contact Number:</label>
+                                    <div class="input-icon">
+                                        <input type="text" class="personal-data" id="contact" required>
+                                        <img class="new_account_img" src="images/contact.jpg">
+                                    </div>
+                                </div>
+
+                                <div class="form-group1">
+                                    <label for="occupation">Occupation:</label>
+                                    <div class="input-icon">
+                                        <input type="text" class="personal-data" id="occupation" required>
+                                        <img class="new_account_img" src="images/job.png">
+                                    </div>
+                                </div>
+
+                                <div class="form-group1">
+                                    <label for="title">Title:</label>
+                                    <select name="" class="personal-data" id="title" required>
+                                        <option >Mr.</option>
+                                        <option >Mrs.</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group1">
+                                    <label for="address">Address:</label>
+                                    <div class="input-icon">
+                                        <input type="text" class="personal-data" id="address" required>
+                                        <img class="new_account_img" src="images/address1.png">
+                                    </div>
+                                </div>
+
+                                <div class="form-group1">
+                                    <label for="email">Email:</label>
+                                    <div class="input-icon">
+                                        <input type="email" class="personal-data" id="email" required>
+                                        <img class="new_account_img" src="images/mail.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-container1">
+                            <button type="submit" class="create">Create</button>
+                            <button type="reset" class="cancel">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+           
+        </div>
+    </div>
+     </div>
+
+<script src="script.js"></script> 
+</body>
+</html>
